@@ -1,7 +1,13 @@
-.header__page-title {
-    margin-bottom: 0.1em;
+@import "../../scss/variables";
+
+.header {
+    padding: 0.5rem 1rem;
+    border-bottom: 8px solid $color-accent;
+    box-shadow: 0px 4px 4px rgba(48, 197, 255, 0.25);
+    display: flex;
+    align-items: center;
 }
 
-.header__page-sub-title {
-    margin: 0;
+.header__page-title {
+   font-size: $font-size-massive;
 }

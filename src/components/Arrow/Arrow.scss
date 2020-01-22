@@ -1,0 +1,39 @@
+@import "../../scss/variables";
+
+.arrow-icon {
+    position: relative;
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.arrow-head {
+    position: absolute;
+    top: 25px;
+    width: 90%;
+    height: 10px;
+    background-color: $color-accent;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        top: -12px;
+        left: -8px;
+        background-color: $color-accent;
+        transform: rotate(135deg);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        top: 12px;
+        left: -8px;
+        background-color: $color-accent;
+        transform: rotate(-135deg);
+    }
+}
